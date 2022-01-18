@@ -1,0 +1,50 @@
+﻿@model IEnumerable<DocuSign.ClickWrap.Demo.Models.ClickWrapResponse>
+
+@{
+    ViewData["Title"] = "ClickWrapResponse";
+}
+
+<h1>ClickWrapResponse</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Identifier)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DocumentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Version)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgreedOn)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Identifier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DocumentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgreedOn)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+﻿@model DocuSign.ESignature.Demo.Models.User
+
+@{
+    ViewData["Title"] = "AddUser";
+}
+
+<h1>AddUser</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddUser">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="button" id="btnpopup" value="T&C" onclick="ShowModelPopUp();" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    ShowModelPopUp = function () {
+        $.ajax({
+            type: "POST",
+            url: "/Home/Docusign",
+            data: null,
+            success: function (result) {
+                if (result === "signing_complete")
+                    window.close();
+                else
+                    window.open(result, 'DocuSign', toolbar = 0, scrollbars = -1, resizable = -1);
+            }
+        });
+    }
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
