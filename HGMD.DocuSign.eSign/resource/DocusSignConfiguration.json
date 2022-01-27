@@ -1,0 +1,99 @@
+{
+  "textTabs": [
+    {
+      "CustomTabId": "423ba386-702d-4632-a3b4-478fcff76aab",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##COVERED_ENTITY##",
+      "AnchorXOffset": "-5",
+      "AnchorYOffset": "-2"
+    },
+    {
+      "CustomTabId": "176d5ad4-68de-4fd6-b6d3-388b196008bb",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##COVERED_ENTITY_ADDRESS##",
+      "AnchorXOffset": "-5",
+      "AnchorYOffset": "-5",
+      "Height": "5"
+    },
+    {
+      "CustomTabId": "d9bed91c-e53c-461b-8d3b-745b72007d9f",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##COVERED_ENTITY_LEGAL_NAME##",
+      "AnchorXOffset": "-5",
+      "AnchorYOffset": "-5",
+      "Height": "5"
+    },
+    {
+      "CustomTabId": "2f337d09-a616-476b-aa18-7aa509c4b0d6",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##NAME##",
+      "AnchorXOffset": "-5",
+      "AnchorYOffset": "-7",
+      "Height": "5"
+    }
+  ],
+  "dateTabs": [
+    {
+      "TabLabel": "Effective Date",
+      "TabType": "date",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##EFFECTIVE_DATE##",
+      "AnchorYOffset": "-2",
+      "Height": "5",
+      "Width": "100"
+    }
+  ],
+  "signHereTabs": [
+    {
+      "CustomTabId": "9dabbd42-6d79-444f-8753-3010790fbda1",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "HandDrawRequired": "true",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##SIGNHERE##",
+      "AnchorXOffset": "10",
+      "AnchorYOffset": "10"
+    }
+  ],
+  "dateSignedTabs": [
+    {
+      "CustomTabId": "2f3493f8-eb8a-40f1-99e3-50f7cff52369",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##DATESIGNED##",
+      "AnchorYOffset": "-2",
+      "Height": "5"
+    }
+  ],
+  "listTabs": [
+    {
+      "CustomTabId": "346baba1-8772-44ce-9385-83f33485b619",
+      "DocumentId": "1",
+      "RecipientId": "1",
+      "AnchorIgnoreIfNotPresent": "true",
+      "AnchorCaseSensitive": "true",
+      "AnchorString": "##TITLE##",
+      "AnchorXOffset": "-5",
+      "AnchorYOffset": "-7",
+      "Height": "5"
+    }
+  ]
+}

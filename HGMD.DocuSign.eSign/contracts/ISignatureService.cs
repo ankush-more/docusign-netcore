@@ -1,9 +1,11 @@
-﻿using HGMD.DocuSign.eSign.Entities;
+﻿using DocuSign.eSign.Model;
+using HGMD.DocuSign.eSign.Entities;
+using System.Threading.Tasks;
 
 namespace HGMD.DocuSign.eSign.contracts
 {
     public interface ISignatureService
     {
-        public string GenerateEnvelopeRedirectURL(DocumentSigner documentSigner);
+        public Task<ViewUrl> GenerateEnvelopeRedirectURL(DocumentSigner documentSigner);
     }
 }
