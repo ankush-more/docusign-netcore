@@ -8,7 +8,7 @@
       "AnchorCaseSensitive": "true",
       "AnchorString": "##COVERED_ENTITY##",
       "AnchorXOffset": "-5",
-      "AnchorYOffset": "-2"
+      "AnchorYOffset": "-3"
     },
     {
       "CustomTabId": "176d5ad4-68de-4fd6-b6d3-388b196008bb",
@@ -29,7 +29,7 @@
       "AnchorCaseSensitive": "true",
       "AnchorString": "##COVERED_ENTITY_LEGAL_NAME##",
       "AnchorXOffset": "-5",
-      "AnchorYOffset": "-5",
+      "AnchorYOffset": "-2",
       "Height": "5"
     },
     {
@@ -40,7 +40,7 @@
       "AnchorCaseSensitive": "true",
       "AnchorString": "##NAME##",
       "AnchorXOffset": "-5",
-      "AnchorYOffset": "-7",
+      "AnchorYOffset": "-3",
       "Height": "5"
     }
   ],
@@ -92,7 +92,7 @@
       "AnchorCaseSensitive": "true",
       "AnchorString": "##TITLE##",
       "AnchorXOffset": "-5",
-      "AnchorYOffset": "-7",
+      "AnchorYOffset": "-3",
       "Height": "5"
     }
   ]
